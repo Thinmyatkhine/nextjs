@@ -1,6 +1,31 @@
 import Image from "next/image";
 
-const skill_data = ["/images/ts.jpg", "/images/css.jpg", "/images/js.jpg", "/images/next.jpg", "/images/react.jpg","/images/tw.jpg"]
+const skill_data = [
+    {
+        image: "/images/ts.jpg",
+        title: "Typescript"
+    },
+    {
+        image: "/images/css.jpg",
+        title: "Css"
+    },
+    {
+        image: "/images/js.jpg",
+        title: "Js"
+    },
+    {
+        image: "/images/next.jpg",
+        title: "next"
+    },
+    {
+        image: "/images/react.jpg",
+        title: "react"
+    },
+    {
+        image: "/images/tw.jpg",
+        title: "Tw"
+    }
+]
 
 //react component 
 export default function Home() {
@@ -13,7 +38,8 @@ export default function Home() {
                     {/* {} => javascript function use */}
                     {
                         skill_data.map(item => (<div className="w-full overflow-hidden">
-                            <Image src={item} alt="ts" width={600} height={600} />
+                            <Image src={item.image} alt="ts" width={600} height={600} />
+                            <h3 className="font-bold w-full text-lg text-center">{item.title}</h3>
                         </div>))
                     }
 

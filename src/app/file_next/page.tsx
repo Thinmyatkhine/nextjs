@@ -4,12 +4,12 @@ const next_obj = {
     img: "/images/next.jpg",
     alt: "next",
     title: "Next Js",
-    skill: ["first", "sec", "third", "fourth"],
+    skill:["first", "sec", "third", "fourth"],
     detail: "styling next",
 }
 
 export default function () {
-    return (
+    return(
         <main className="w-screen h-screen flex justify-center items-center">
             <div className="flex gap-8 items-center">
                 <div className="w-[8rem]">
@@ -20,7 +20,7 @@ export default function () {
                     <div className="gap-2 flex animate-bounce" >
                         {next_obj.skill.map(item => (<div className="w-[25px] h-[12px] bg-black rounded"></div>))}
                     </div>
-                    <p className="flex">{next_obj.detail}<BsFillBalloonHeartFill /></p>
+                    <p className="flex">{next_obj.detail}<BsFillBalloonHeartFill className="text-purple-800" /></p>
                 </div>
             </div>
         </main>

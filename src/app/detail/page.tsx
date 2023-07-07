@@ -4,7 +4,7 @@ const skill_obj = {
     img: "/images/ts.jpg",
     alt: "ts",
     title: "TypeScript",
-    skill: ["firstYear", "secondYear", "thirdYear"],
+    skill:["firstYear", "secondYear", "thirdYear"],
     detail: "Mostly use with react.js"
 }
 export default function home() {
