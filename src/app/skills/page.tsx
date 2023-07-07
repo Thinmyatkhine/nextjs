@@ -37,7 +37,7 @@ export default function Home() {
 
                     {/* {} => javascript function use */}
                     {
-                        skill_data.map(item => (<div className="w-full overflow-hidden">
+                        skill_data.map(item => (<div className="w-full overflow-hidden" key={item.title}>
                             <Image src={item.image} alt="ts" width={600} height={600} />
                             <h3 className="font-bold w-full text-lg text-center">{item.title}</h3>
                         </div>))
