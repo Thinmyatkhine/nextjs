@@ -30,7 +30,7 @@ export default function MyFruits() {
     // target is an object which has value in it
     const target = event.target as any; 
 
-    // check if target is object or undefine
+    // check if target is object or undefined
     if (target) {
 
         // fruits is an object array
