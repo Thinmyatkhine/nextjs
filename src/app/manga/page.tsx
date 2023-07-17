@@ -33,7 +33,7 @@ const manga_data = [
 
 
 
-export default function manga() {
+export default function Manga() {
     const [select, set_select] = useState({
         image: "/images/Age-Matters-Webtoon.jpeg",
         title: "Age Matters"
