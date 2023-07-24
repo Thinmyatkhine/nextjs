@@ -46,7 +46,9 @@ export default function Home() {
                     <div className="grid grid-cols-3 gap-3 w-full ">
 
                         {/* {} => javascript function use */}
+                        {/* object array to string array */}
                         {/* {skill_data.map(item => (item.title))} */}
+                        {/* object array to jsx array */}
                         {
                             skill_data.map(item => (
                                 <div
